@@ -22,7 +22,10 @@ export default function ButtonCarrusel() {
         centeredSlides={true}
         slidesPerView={"auto"}
         loop
-        pagination={true}
+        pagination={{
+          clickable: true
+        }}
+        navigation={true}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -44,6 +47,7 @@ export default function ButtonCarrusel() {
               img={btnProps.img}
               href={btnProps.href}
             />
+            
           </SwiperSlide>
         ))}
       </Swiper>
