@@ -34,13 +34,13 @@ export default function ButtonCarrusel() {
           slideShadows: false,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="pt-[20px]"
+        className="grid place-items-center pt-[20px]"
       >
         {HomeButtonController.map((btnProps, index) => (
           <SwiperSlide
             key={index}
             style={{ background: "none" }}
-            className="flex justify-center items-center mb-[20px]"
+            className="grid place-items-center mb-[20px]"
           >
             <HomeButton
               text={btnProps.text}
