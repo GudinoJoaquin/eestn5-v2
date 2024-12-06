@@ -2,17 +2,17 @@ export const textStyles = {
     title: {
       base: "font-bold antialiased", // Estilos comunes
       mobile: "text-[15vw]",
-      desktop: "text-[5vw]",
+      desktop: "lg:text-[90px]",
     },
     subtitle: {
       base: "font-semibold",
       mobile: "text-[6vw]",
-      desktop: "text-[2vw]",
+      desktop: "lg:text-[40px]",
     },
     subtitleSmall: {
       base: "font-medium",
       mobile: "text-[6vw]",
-      desktop: "text-[2vw]",
+      desktop: "lg:text-[30px]",
     },
 };
 

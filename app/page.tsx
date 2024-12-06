@@ -25,20 +25,20 @@ export default function Home() {
       <header className="flex flex-col items-center mt-[50px]">
         {/* Título */}
         <h1
-          className={`${textStyles.title.base} ${textStyles.title.mobile} lg:${textStyles.title.desktop} ${montserrat.className}`}
+          className={`${textStyles.title.base} ${textStyles.title.mobile} ${textStyles.title.desktop} ${montserrat.className}`}
         >
           E.E.S.T. N°5
         </h1>
 
         {/* Subtítulos */}
         <h2
-          className={`${textStyles.subtitle.base} ${textStyles.subtitle.mobile} lg:${textStyles.subtitle.desktop} mt-[-15px]`}
+          className={`${textStyles.subtitle.base} ${textStyles.subtitle.mobile} ${textStyles.subtitle.desktop} mt-[-15px]`}
         >
           Amancio Williams
         </h2>
         <div className="border-b-2 border-white w-[50vw] lg:w-[17vw]"></div>
         <h3
-          className={`${textStyles.subtitleSmall.base} ${textStyles.subtitleSmall.mobile} lg:${textStyles.subtitleSmall.desktop}`}
+          className={`${textStyles.subtitleSmall.base} ${textStyles.subtitleSmall.mobile} ${textStyles.subtitleSmall.desktop}`}
         >
           Mar del Plata
         </h3>
