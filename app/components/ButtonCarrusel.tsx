@@ -40,7 +40,7 @@ export default function ButtonCarrusel() {
           <SwiperSlide
             key={index}
             style={{ background: "none" }}
-            className="grid place-items-center mb-[20px]"
+            className=" mb-[20px]"
           >
             <HomeButton
               text={btnProps.text}
