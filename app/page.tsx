@@ -2,12 +2,14 @@ import Image from "next/image";
 import background from "./assets/img/frente-escuela.webp";
 import { montserrat } from "./ui/fonts";
 
-import CustomSwiper from "./components/Carrusel";
+import ButtonCarrusel from "./components/ButtonCarrusel";
+import NoticeCarrusel from "./components/NewsCarrusel";
+import Temporal from "./components/TemporalCarrusel";
 
 export default function Home() {
   return (
     <>
-      <main className="text-white flex flex-col items-center">
+      <main className="text-white flex flex-col items-center overflow-x-hidden">
         <Image
           src={background}
           alt="Fondo"
@@ -28,12 +30,14 @@ export default function Home() {
           <div className="border-b-2 border-white w-[50vw]"></div>
           <h3 className={`font-medium text-[5vw] `}>Mar del Plata</h3>
         </header>
-        <section>
-          <h2>Información de la escuela</h2>
-          <CustomSwiper />
+        <section className="mt-[60px]">
+          <Temporal />
         </section>
-        <section>
-          <h3>Botones</h3>
+        <section className="mt-[10px]">
+          <NoticeCarrusel />
+        </section>
+        <section className="mt-[20px]">
+          <ButtonCarrusel />
         </section>
       </main>
     </>

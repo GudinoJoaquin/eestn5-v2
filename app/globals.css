@@ -2,23 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
+/* Cambiar color de las bullets */
+.swiper-pagination-bullet {
+  background-color: #fff; /* Color de las bullets inactivas */
+  width: 8px;               /* Tamaño de las bullets */
+  height: 8px;              /* Tamaño de las bullets */
+  border-radius: 50%;        /* Bullets redondos */
+  opacity: 0.7;              /* Opacidad de las bullets */
+  transition: background-color 0.3s, transform 0.3s; /* Animación al hacer hover */
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Cambiar el color cuando la bullet está activa */
+.swiper-pagination-bullet-active {
+  background-color: #46ff40; /* Color de las bullets activas */
 }
