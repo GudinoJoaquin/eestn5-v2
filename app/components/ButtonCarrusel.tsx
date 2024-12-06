@@ -23,7 +23,7 @@ export default function ButtonCarrusel() {
         slidesPerView={"auto"}
         loop
         pagination={{
-          clickable: true
+          clickable: true,
         }}
         navigation={true}
         coverflowEffect={{
@@ -40,14 +40,13 @@ export default function ButtonCarrusel() {
           <SwiperSlide
             key={index}
             style={{ background: "none" }}
-            className=" mb-[20px]"
+            className="flex justify-center items-center mb-[20px]"
           >
             <HomeButton
               text={btnProps.text}
               img={btnProps.img}
               href={btnProps.href}
             />
-            
           </SwiperSlide>
         ))}
       </Swiper>
