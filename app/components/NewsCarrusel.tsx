@@ -16,6 +16,7 @@ import {
 } from "swiper/modules";
 
 import { NoticeContent } from "../utils/utils";
+import { CarruselStyles } from "../ui/styles";
 
 export default function NoticeCarrusel() {
   return (
@@ -44,7 +45,7 @@ export default function NoticeCarrusel() {
             style={{ background: "none" }}
             className="grid place-items-center mb-[40px]"
           >
-            <div className="border-2 grid place-items-center border-white w-[250px] text-balance h-[120px] rounded-[8px] backdrop-blur-[20px] bg-white/[2%]">
+            <div className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}>
               {notices}
             </div>
           </SwiperSlide>

@@ -1,11 +1,11 @@
-"use client";
-
 import React from "react";
+
+import { CarruselStyles } from "../ui/styles";
 
 export default function Temporal() {
   return (
     <>
-      <div className="border-2 grid place-items-center border-white w-[250px] text-balance h-[120px] rounded-[8px] backdrop-blur-[20px] bg-white/[2%]">
+      <div className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}>
         adfadf
       </div>
     </>
