@@ -8,9 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`grid grid-rows-[1fr_auto] min-h-screen ${notoSans.className} antialiased`}
-      >
+      <body className={`grid grid-rows-[1fr_auto] min-h-screen ${notoSans.className} antialiased`}>
         {children}
         <footer className="bg-green-500">Footer</footer>
       </body>
