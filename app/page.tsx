@@ -32,13 +32,13 @@ export default function Home() {
           <div className="border-b-2 border-white w-[50vw]"></div>
           <h3 className={`font-medium text-[5vw] `}>Mar del Plata</h3>
         </header>
-        <section className="mt-[40px]">
+        <section className="mt-[30px]">
           <TemporalCarrusel />
         </section>
-        <section className="mt-[60px]">
+        <section className="mt-[30px]">
           <NewsCarrusel />
         </section>
-        <section className="mt-[20px]">
+        <section className="mt-[5px]">
           <ButtonCarrusel />
         </section>
       </main>
