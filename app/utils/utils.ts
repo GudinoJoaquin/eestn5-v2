@@ -9,6 +9,3 @@ export const HomeButtonController = [
     {text: "Sobre Nosotros", img: nosotros, href: "#"},
     {text: "Nuestras Especialidades", img: especialidades, href: "#"},
 ]
-
-export const NoticeContent = [
-    "Ingreso 2025", "Mesas julio", "Equivalencias diciembre"]

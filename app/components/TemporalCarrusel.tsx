@@ -10,7 +10,7 @@ export default function Temporal() {
       >
         <p>
           Las novedades sobre el nuevo regimen academico las encontraran en{" "}
-          <b>Institucionales</b>
+          <b className="underline">Institucionales</b>
         </p>
       </div>
     </>

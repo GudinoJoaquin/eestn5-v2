@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Loader from "react-js-loader";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -15,10 +16,24 @@ import {
   Autoplay,
 } from "swiper/modules";
 
-import { NoticeContent } from "../utils/utils";
 import { CarruselStyles } from "../ui/styles";
 
+import useFetch from "../hooks/useFetch";
+
+interface ApiResponse {
+  id: number;
+  titulo: string;
+}
+
 export default function NoticeCarrusel() {
+  const { data, loading, error } = useFetch<ApiResponse[]>(
+    "https://anuncios.vercel.app"
+  );
+
+  if (error) {
+    return <h1>Error</h1>;
+  }
+
   return (
     <>
       <Swiper
@@ -39,24 +54,35 @@ export default function NoticeCarrusel() {
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="flex items-center justify-center"
       >
-        {NoticeContent.map((notices, index) => (
-          <SwiperSlide
-            key={index}
-            style={{
-              background: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className="grid place-items-center mb-[40px]"
+        {loading ? (
+          <div
+            className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}
           >
-            <div
-              className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}
+            <Loader
+              bgColor={"#fff"}
+              color={"#ffff"}
+            />
+          </div>
+        ) : (
+          data?.slice(0, 3).map((anuncio) => (
+            <SwiperSlide
+              key={anuncio.id}
+              style={{
+                background: "none",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="grid place-items-center"
             >
-              {notices}
-            </div>
-          </SwiperSlide>
-        ))}
+              <div
+                className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}
+              >
+                {anuncio.titulo}
+              </div>
+            </SwiperSlide>
+          ))
+        )}
       </Swiper>
     </>
   );

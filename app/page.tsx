@@ -9,7 +9,6 @@ import NewsCarrusel from "./components/NewsCarrusel";
 import TemporalCarrusel from "./components/TemporalCarrusel";
 
 export default function Home() {
-
   return (
     <main
       className={`text-white flex flex-col items-center overflow-x-hidden background`}
@@ -17,20 +16,18 @@ export default function Home() {
       <Image
         src={background}
         alt="Fondo"
-        layout="fill" // Ocupa todo el espacio del contenedor
-        objectFit="cover" // Ajusta la imagen al tamaño del contenedor
+        layout="fill"
+        objectFit="cover"
         priority
-        className="-z-10 brightness-[30%]" // Envía la imagen al fondo
+        className="-z-10 brightness-[30%]"
       />
-      <header className="flex flex-col items-center mt-[50px]">
-        {/* Título */}
+      <header className="flex flex-col items-center mt-[10px]">
         <h1
           className={`${textStyles.title.base} ${textStyles.title.mobile} ${textStyles.title.desktop} ${montserrat.className}`}
         >
           E.E.S.T. N°5
         </h1>
 
-        {/* Subtítulos */}
         <h2
           className={`${textStyles.subtitle.base} ${textStyles.subtitle.mobile} ${textStyles.subtitle.desktop} mt-[-15px]`}
         >

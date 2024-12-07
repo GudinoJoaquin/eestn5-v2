@@ -19,8 +19,8 @@ export const textStyles = {
 
 export const CarruselStyles = {
   base: "border-2 grid place-items-center border-white text-center text-balance rounded-[8px] backdrop-blur-[20px] bg-white/[2%] max-w-screen",
-  mobile: "w-[250px] h-[110px] text-[14px]",
-  desktop: "lg:w-[420px] lg:h-[170px] lg:text-[25px]",
+  mobile: "w-[250px] min-w-[250px] h-[110px] min-h-[110px] text-[14px]",
+  desktop: "lg:w-[420px] lg:min-w-[420px] lg:h-[170px] lg:min-h-[170px] lg:text-[25px]",
 }
 
 export const HomeButtonStyle = {
