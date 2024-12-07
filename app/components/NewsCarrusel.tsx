@@ -42,10 +42,17 @@ export default function NoticeCarrusel() {
         {NoticeContent.map((notices, index) => (
           <SwiperSlide
             key={index}
-            style={{ background: "none" }}
+            style={{
+              background: "none",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
             className="grid place-items-center mb-[40px]"
           >
-            <div className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}>
+            <div
+              className={`${CarruselStyles.base} ${CarruselStyles.mobile} ${CarruselStyles.desktop}`}
+            >
               {notices}
             </div>
           </SwiperSlide>

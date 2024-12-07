@@ -13,8 +13,6 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 export default function Carrusel() {
-
-
   return (
     <>
       <Swiper
@@ -49,7 +47,6 @@ export default function Carrusel() {
         <SwiperSlide>
           <div className="bg-purple-500 h-[100px]">Slide 5</div>
         </SwiperSlide>
-
       </Swiper>
     </>
   );

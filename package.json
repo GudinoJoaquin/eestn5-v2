@@ -10,9 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.0.3",
     "@midudev/tailwind-animations": "^0.0.7",
     "i": "^0.3.7",
+    "next": "15.0.3",
     "npm": "^10.8.0",
     "react": "^18.2.0",
     "react-confetti": "^6.1.0",

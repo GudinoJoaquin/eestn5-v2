@@ -20,7 +20,7 @@ export default function ButtonCarrusel() {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         loop
         pagination={{
           clickable: true,
@@ -39,7 +39,13 @@ export default function ButtonCarrusel() {
         {HomeButtonController.map((btnProps, index) => (
           <SwiperSlide
             key={index}
-            style={{ background: "none", display: 'flex', justifyContent: 'center', alignItems: 'center', width: 600 }}
+            style={{
+              background: "none",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: 600,
+            }}
             className="grid place-items-center mb-[40px]"
           >
             <HomeButton

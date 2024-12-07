@@ -1,16 +1,17 @@
 export const textStyles = {
     title: {
-      base: "font-bold antialiased", // Estilos comunes
+      base: "font-bold antialiased animate-fade-in-down", // Estilos comunes
       mobile: "text-[15vw]",
       desktop: "lg:text-[90px]",
     },
     subtitle: {
-      base: "font-semibold",
+      base: "font-semibold animate-fade-in-down",
       mobile: "text-[6vw]",
       desktop: "lg:text-[40px]",
     },
+
     subtitleSmall: {
-      base: "font-medium",
+      base: "font-medium animate-fade-in-up",
       mobile: "text-[6vw]",
       desktop: "lg:text-[30px]",
     },
@@ -23,7 +24,7 @@ export const CarruselStyles = {
 }
 
 export const HomeButtonStyle = {
-  base: 'rounded-[20px] flex justify-center items-center flex-col transition duration-[.3s] ease-in-out mb-4 text-white bg-white/[2%] backdrop-blur-[20px] font-semibold p-4 border-2 border-white shadow-md',
+  base: 'animate-fade-in-down rounded-[20px] flex justify-center items-center flex-col transition duration-[.3s] ease-in-out mb-4 text-white bg-white/[2%] backdrop-blur-[20px] font-semibold p-4 border-2 border-white shadow-md',
   mobile: 'w-[35%] text-[14px]',
   desktop: 'lg:w-[30%] lg:text-[16px]'
 }
